@@ -1,0 +1,34 @@
+C51 COMPILER V7.06   LESSON1_1                                                             07/27/2018 00:27:12 PAGE 1   
+
+
+C51 COMPILER V7.06, COMPILATION OF MODULE LESSON1_1
+OBJECT MODULE PLACED IN lesson1_1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lesson1_1.c BROWSE DEBUG OBJECTEXTEND
+
+stmt level    source
+
+   1          #include<reg52.h>
+   2          sbit D1=P1^0; 
+   3          int main()
+   4          {
+   5   1          D1=0;
+   6   1          D1=1;
+   7   1          D1=2;
+   8   1          D1=3;
+   9   1          D1=4;
+  10   1              D1=0;
+  11   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     13    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
