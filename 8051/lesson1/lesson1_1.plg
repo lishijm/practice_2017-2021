@@ -7,59 +7,6 @@ D:\Learning-C\8051\lesson1\lesson1_1.uv2
 Project File Date:  07/27/2018
 
 <h2>Output:</h2>
-Build target 'Target 1'
-assembling STARTUP.A51...
-compiling lesson1_1.c...
-linking...
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "lesson1_1"...
-"lesson1_1" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling STARTUP.A51...
-compiling lesson1_1.c...
-linking...
-Program Size: data=9.0 xdata=0 code=18
-creating hex file from "lesson1_1"...
-"lesson1_1" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling STARTUP.A51...
-compiling lesson1_1.c...
-linking...
-Program Size: data=9.0 xdata=0 code=32
-creating hex file from "lesson1_1"...
-"lesson1_1" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling STARTUP.A51...
-compiling lesson1_1.c...
-linking...
-Program Size: data=9.0 xdata=0 code=32
-creating hex file from "lesson1_1"...
-"lesson1_1" - 0 Error(s), 0 Warning(s).
-Build target 'Target 1'
-assembling STARTUP.A51...
-compiling lesson1_1.c...
-LESSON1_1.C(6): error C141: syntax error near 'sbit'
-LESSON1_1.C(6): error C202: 'D1': undefined identifier
-LESSON1_1.C(7): error C141: syntax error near 'sbit'
-LESSON1_1.C(7): error C202: 'D2': undefined identifier
-LESSON1_1.C(8): error C141: syntax error near 'sbit'
-LESSON1_1.C(8): error C202: 'D3': undefined identifier
-LESSON1_1.C(9): error C141: syntax error near 'sbit'
-LESSON1_1.C(9): error C202: 'D4': undefined identifier
-LESSON1_1.C(10): error C141: syntax error near 'sbit'
-LESSON1_1.C(10): error C202: 'D5': undefined identifier
-LESSON1_1.C(11): error C141: syntax error near 'sbit'
-LESSON1_1.C(11): error C202: 'D6': undefined identifier
-LESSON1_1.C(12): error C141: syntax error near 'sbit'
-LESSON1_1.C(12): error C202: 'D7': undefined identifier
-LESSON1_1.C(13): error C141: syntax error near 'sbit'
-LESSON1_1.C(13): error C202: 'D8': undefined identifier
-LESSON1_1.C(15): error C202: 'D1': undefined identifier
-LESSON1_1.C(16): error C202: 'D2': undefined identifier
-LESSON1_1.C(17): error C202: 'D3': undefined identifier
-LESSON1_1.C(18): error C202: 'D4': undefined identifier
-LESSON1_1.C(19): error C202: 'D5': undefined identifier
-LESSON1_1.C(20): error C202: 'D6': undefined identifier
-LESSON1_1.C(21): error C202: 'D7': undefined identifier
-LESSON1_1.C(22): error C202: 'D8': undefined identifier
-Target not created
+</pre>
+</body>
+</html>

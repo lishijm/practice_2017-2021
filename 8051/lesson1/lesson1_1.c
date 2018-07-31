@@ -1,4 +1,4 @@
-//鐐逛寒鎵�鏈夊彂鍏夌
+//点亮所有发光管
 #include<reg52.h>
 
 int main()
