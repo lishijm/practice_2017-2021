@@ -1,3 +1,6 @@
 {
-    "files.autoGuessEncoding": true
+    "files.autoGuessEncoding": true,
+    "files.associations": {
+        "stdio.h": "c"
+    }
 }
