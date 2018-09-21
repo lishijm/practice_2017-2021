@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int n,i,max=0,maxn=1,sum=0,num;//iÎª¼ÆÊý¾ý 
+    int n,i,max=0,maxn=1,sum=0,num;//i???????? 
     float sumf,nf;
     scanf("%d\n",&n);
     int mark[n];
