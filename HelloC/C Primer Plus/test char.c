@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main (void)
 {
-	char a;
-	
-	scanf("%c",&a);
-	printf("%c,%d",a,a);
+	int x;
+	for(x=0;x<1312314325435325;x++){
+		printf("%d",x);
+	}
 	
 	return 0;
 }
