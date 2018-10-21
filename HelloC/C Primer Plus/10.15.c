@@ -13,5 +13,6 @@ int main(int argc, char const *argv[])
     printf("zippo[2][1]=%d\n",zippo[2][1]);
     printf("*(*(zippo+2)+1)=%d\n",*(*(zippo+2)+1));
 
+
     return 0;
 }
