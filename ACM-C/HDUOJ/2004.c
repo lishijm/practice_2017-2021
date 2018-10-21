@@ -1,27 +1,21 @@
-#include<stdio.h> 
-int main(int argc, char const *argv[])
+#include <stdio.h>
+int main()
 {
-    int sco,n;
-    while(scanf("%d",&sco)!=EOF){
-        getchar();
-        n=sco/10;
-        if(n<0||n>10){
+    int t;
+    while(scanf("%d",&t)!=EOF)
+    {
+        if(t>=90&&t<=100)
+            printf("A\n");
+        else if(t>=80&&t<=89)
+            printf("B\n");
+        else if(t>=70&&t<=79)
+            printf("C\n");
+        else if(t>=60&&t<=69)
+            printf("D\n");
+        else if(t>=0&&t<=59)
+            printf("E\n");
+        else 
             printf("Score is error!\n");
-            continue;
-        }
-        switch(n){
-            case 0:printf("E\n");break;
-            case 1:printf("E\n");break;
-            case 2:printf("E\n");break;
-            case 3:printf("E\n");break;
-            case 4:printf("E\n");break;
-            case 5:printf("E\n");break;
-            case 6:printf("D\n");break;
-            case 7:printf("C\n");break;
-            case 8:printf("B\n");break;
-            case 9:printf("A\n");break;
-            case 10:printf("A\n");break;
-        }
+        
     }
-    return 0;
 }
