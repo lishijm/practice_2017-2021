@@ -9,7 +9,7 @@ int main(int argc, char const *argv[])
     printf("*zippo=%p,*zippo+1=%p\n",*zippo,*zippo+1);
     printf("zippo[0][0]=%d\n",zippo[0][0]);
     printf("*zippo[0]=%d\n",*zippo[0]);
-    printf("**zippo=%d",**zippo);
+    printf("**zippo=%d\n",**zippo);
     printf("zippo[2][1]=%d\n",zippo[2][1]);
     printf("*(*(zippo+2)+1)=%d\n",*(*(zippo+2)+1));
 
