@@ -7,8 +7,8 @@ void goAhead() {
   digitalWrite(A2,LOW);
   pinMode(A3, OUTPUT);
   digitalWrite(A3,HIGH);
-  analogWrite(3,71);
-  analogWrite(5,98);
+  analogWrite(3,90);
+  analogWrite(5,135);
 }
 void turnLeft() {
   pinMode(A0, OUTPUT);
