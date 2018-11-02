@@ -7,8 +7,8 @@ void goAhead() {
   digitalWrite(A2,LOW);
   pinMode(A3, OUTPUT);
   digitalWrite(A3,HIGH);
-  analogWrite(3,85);
-  analogWrite(5,103);
+  analogWrite(3,110);
+  analogWrite(5,133);
 }
 void turnLeft() {
   pinMode(A0, OUTPUT);
@@ -19,8 +19,8 @@ void turnLeft() {
   digitalWrite(A2,LOW);
   pinMode(A3, OUTPUT);
   digitalWrite(A3,HIGH);
-  analogWrite(3,85);
-  analogWrite(5,103);
+  analogWrite(3,110);
+  analogWrite(5,133);
 }
 void turnRight() {
   pinMode(A0, OUTPUT);
@@ -31,8 +31,8 @@ void turnRight() {
   digitalWrite(A2,HIGH);
   pinMode(A3, OUTPUT);
   digitalWrite(A3,LOW);
-  analogWrite(3,85);
-  analogWrite(5,103);
+  analogWrite(3,110);
+  analogWrite(5,133);
 }
 void setup()
 {
@@ -43,12 +43,12 @@ void setup()
 void loop()
 {
   if (digitalRead(6)) {
-    turnRight();
+    turnLeft();
     delay(1);
 
   }
   if (digitalRead(2)) {
-    turnLeft();
+    turnRight();
     delay(1);
 
   }
