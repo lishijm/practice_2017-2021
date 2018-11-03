@@ -1,64 +1,58 @@
-void goAhead() {
-  pinMode(A0, OUTPUT);
+void goAhead(float speedl,float speedr) {
   digitalWrite(A0,HIGH);
-  pinMode(A1, OUTPUT);
   digitalWrite(A1,LOW);
-  pinMode(A2, OUTPUT);
   digitalWrite(A2,LOW);
-  pinMode(A3, OUTPUT);
   digitalWrite(A3,HIGH);
-  analogWrite(3,132);
-  analogWrite(5,160);
+  analogWrite(3,speedr);        //右轮速度参数
+  analogWrite(5,speedl);        //左轮速度参数
 }
-void turnLeft() {
-  pinMode(A0, OUTPUT);
+void turnLeft(float speedl,float speedr) {
   digitalWrite(A0,LOW);
-  pinMode(A1, OUTPUT);
   digitalWrite(A1,HIGH);
-  pinMode(A2, OUTPUT);
   digitalWrite(A2,LOW);
-  pinMode(A3, OUTPUT);
   digitalWrite(A3,HIGH);
-  analogWrite(3,132);
-  analogWrite(5,160);
+  analogWrite(3,speedr);
+  analogWrite(5,speedl);
 }
-void turnRight() {
-  pinMode(A0, OUTPUT);
+void turnRight(float speedl,float speedr) {
   digitalWrite(A0,HIGH);
-  pinMode(A1, OUTPUT);
   digitalWrite(A1,LOW);
-  pinMode(A2, OUTPUT);
   digitalWrite(A2,HIGH);
-  pinMode(A3, OUTPUT);
   digitalWrite(A3,LOW);
-  analogWrite(3,132);
-  analogWrite(5,160);
+  analogWrite(3,speedr);
+  analogWrite(5,speedl);
 }
 void setup()
 {
   pinMode(6, INPUT);
   pinMode(2, INPUT);
+  pinMode(A0, OUTPUT);
+  pinMode(A1, OUTPUT);
+  pinMode(A2, OUTPUT);
+  pinMode(A3, OUTPUT);
 }
 
 void loop()
 {
-  int flag01,flag02;
-  int t=10;
+  static int flag01=0,flag02=0;
+  static int t=10;
+  static float speedr=132,speedl=160;
   if (digitalRead(6)) {
-    turnLeft();
+    turnLeft(speedl,speedr);
     delay(t);
     flag01++;
 
   }
   if (digitalRead(2)) {
-    turnRight();
+    turnRight(speedl,speedr);
     delay(t);
     flag02++;
 
   }
-  if(flag01=flag02>=3){
-    t--;
+  if(flag01+flag02>=3){
+    speedl-2.424;
+    speedr-2;
   }
-  goAhead();
+  goAhead(speedl,speedr);
 
 }
