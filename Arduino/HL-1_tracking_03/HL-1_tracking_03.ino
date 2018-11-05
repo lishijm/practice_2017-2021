@@ -1,3 +1,6 @@
+int flag01=0,flag02=0;
+int t=10;
+float speedr=132,speedl=160;
 void goAhead(float speedl,float speedr) {
   digitalWrite(A0,HIGH);
   digitalWrite(A1,LOW);
@@ -34,10 +37,19 @@ void setup()
 
 void loop()
 {
-  static int flag01=0,flag02=0;
-  static int t=10;
-  static float speedr=132,speedl=160;
   if (digitalRead(6)) {
+    turnLeft(speedl,speedr);
+    delay(t);
+    flag01++;
+
+  }
+  if (digitalRead(2)) {
+    turnRight(speedl,speedr);
+    delay(t);
+    flag02++;
+
+  }
+    if (digitalRead(6)) {
     turnLeft(speedl,speedr);
     delay(t);
     flag01++;
@@ -52,6 +64,8 @@ void loop()
   if(flag01+flag02>=3){
     speedl-2.424;
     speedr-2;
+    flag01=0;
+    flag02=0;
   }
   goAhead(speedl,speedr);
 
