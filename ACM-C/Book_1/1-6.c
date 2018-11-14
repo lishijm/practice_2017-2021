@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         b=a;
         a=tmp;
     }
-    if(a+b>=c){
+    if(a+b>c){
         printf("yes");
     }
     else{
