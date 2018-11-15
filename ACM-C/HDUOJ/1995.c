@@ -1,5 +1,6 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<string.h>
+#include<math.h>
 int hanoi(int n,int k){
     int num;
     
