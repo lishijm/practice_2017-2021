@@ -1,7 +1,9 @@
 {
     "files.autoGuessEncoding": true,
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "iostream": "cpp",
+        "algorithm": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
