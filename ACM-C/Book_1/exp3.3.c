@@ -1,4 +1,3 @@
-//ÉßĞÎÌîÊı
 #include<stdio.h>
 #include<string.h>
 #define maxn 20
