@@ -6,11 +6,11 @@ int main(int argc, char const *argv[])
 {
     int n,k,first=1;
     memset(a,0,sizeof(a));
-    scanf("%d %d",&n,k);
+    scanf("%d%d",&n,&k);
     for(int i=1;i<=k;i++)
         for(int j=1;j<=n;j++)
             if(j%i==0) a[j]=!a[i];
-    for(int i=1;i<=i;i++)
+    for(int i=1;i<=n;i++)
         if(a[i]){if(first) first=0;else printf(" ");printf("%d",i);}
     printf("\n");
     return 0;
