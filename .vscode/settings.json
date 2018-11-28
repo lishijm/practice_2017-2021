@@ -1,8 +1,3 @@
 {
-    "files.autoGuessEncoding": true,
-    "files.associations": {
-        "stdio.h": "c",
-        "iostream": "cpp",
-        "algorithm": "cpp"
-    },
+    "files.autoGuessEncoding": true
 }
