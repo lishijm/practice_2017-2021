@@ -1,3 +1,4 @@
+#include<Arduino.h>
 void goAhead() {
   pinMode(A0, OUTPUT);
   digitalWrite(A0,HIGH);
