@@ -1,5 +1,6 @@
 {
-    "board": "arduino:avr:uno",
-    "port": "COM4",
-    "sketch": "Arduino\\sketch_oct27a.ino"
+    "board": "arduino:avr:nano",
+    "port": "COM3",
+    "sketch": "Arduino\\sketch_oct27a.ino",
+    "configuration": "cpu=atmega328old"
 }

@@ -1,2 +1,2 @@
-#Learning-C
 #包含部分XUPT和HDU的OJ习题
+#包含在Lab借助Arduino开发的项目
