@@ -1,6 +1,6 @@
 {
     "board": "arduino:avr:nano",
-    "port": "COM3",
-    "sketch": "Arduino\\sketch_oct27a.ino",
+    "port": "COM5",
+    "sketch": "Arduino\\counter\\counter_v0.1\\counter_v0.1.ino",
     "configuration": "cpu=atmega328old"
 }
