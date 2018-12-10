@@ -20,9 +20,6 @@ void setup(){
   lcd.write((byte)1);
 }
 void loop(){
-  lcd.setCursor(0,0);
-  lcd.print(nop);
-  
   if(digitalRead(2)==0){
     nop++;
     digitalWrite(13,HIGH);
@@ -30,6 +27,9 @@ void loop(){
   else{
     digitalWrite(13,LOW);
   }
+  
+  lcd.setCursor(0,0);
+  lcd.print(nop);
   
   delay(700);
 }
