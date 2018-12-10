@@ -8,6 +8,7 @@ uint8_t ren[8]={0x02,0x02,0x04,0x04,0x04,0x0A,0x0A,0x11,};//“人”字库
 uint8_t ci[8]={0X04,0X17,0X15,0X02,0X0A,0X15,0X15,0X15,};//“次”字库
 int nop=0;               //人次的变量
 void setup(){
+  pinMode(13,OUTPUT);
   pinMode(2,INPUT); 
   lcd.begin(16,2);      //红外开关数据端口
   lcd.createChar(0,ren);//创建字符
@@ -19,8 +20,12 @@ void setup(){
 void loop(){
   if(digitalRead(2)==0){
     nop++;
-    delay(500);
+    digitalWrite(13,HIGH);
+  }
+  else{
+    digitalWrite(13,LOW);
   }
   lcd.setCursor(0,0);
   lcd.print(nop);
+  delay(700);
 }
