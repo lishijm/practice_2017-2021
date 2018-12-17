@@ -14,7 +14,7 @@
 #define COM4 13
 #define sensor A0  
 
-int nop=0,nopv=0; //人次
+int nop=0000; //äººæ¬¡
 
 unsigned char num[17][8] = {  
  //a  b  c  d  e  f  g  h   
@@ -86,9 +86,26 @@ void Display(unsigned char com,unsigned char n){
 
 void count(){
     if(digitalRead(sensor)==0){
-        nopv++;
+        nop++;
     }
-    return nopv;
+}
+
+void number(){
+    int a=0,b=0,c=0,d=0;
+
+    a=nop/1000;
+    b=(nop/100)%10;
+    c=(nop%100)/10;
+    d=nop%10;
+
+    Display(1,a);
+    delay(1);
+    Display(2,b);
+    delay(1);
+    Display(3,c);
+    delay(1);
+    Display(4,d);
+    delay(1);
 }
 
 void setup(){  
@@ -107,15 +124,18 @@ void setup(){
     pinMode(COM4,OUTPUT);  
 
     pinMode(sensor,INPUT);
-}  
-  
-void loop(){
-    int a=0,b=0,c=0,d=0;
-    nop=count();
-    a=nop/1000;
-    b=(nop/100)%10;
-    c=(nop%100)/10;
-    d=nop%10;
+}
 
-    Display()
+void loop(){
+    int i;
+    for(i=0;i<175;i++){
+        if(i==174){
+            count();
+            number();
+            i=0;
+        }
+        else{
+            number();
+        }
+    }
 }
