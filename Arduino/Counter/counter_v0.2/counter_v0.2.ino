@@ -14,7 +14,7 @@
 #define COM4 13
 #define sensor A0  
 
-int nop=0000; //äººæ¬¡
+int nop=0000;
 
 unsigned char num[17][8] = {  
  //a  b  c  d  e  f  g  h   
