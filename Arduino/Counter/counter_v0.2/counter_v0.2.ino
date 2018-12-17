@@ -1,3 +1,4 @@
+//通过四位数码管显示通过人次，不分辨进出方向，不分辨人是否停留
 #include<Arduino.h>
 
 #define d_a 2  
