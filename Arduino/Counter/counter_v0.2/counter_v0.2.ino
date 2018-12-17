@@ -1,6 +1,6 @@
 //通过四位数码管显示通过人次，不分辨进出方向，不分辨人是否停留
 #include<Arduino.h>
-
+//接口定义
 #define d_a 2  
 #define d_b 3  
 #define d_c 4  
@@ -15,9 +15,9 @@
 #define COM4 13
 #define sensor A0  
 
-int nop=0000;
+int nop=0000;                     //人次的变量
 
-unsigned char num[17][8] = {  
+unsigned char num[17][8] = {      //字符的轮子
  //a  b  c  d  e  f  g  h   
     {1, 1, 1, 1, 1, 1, 0, 0},     //0  
     {0, 1, 1, 0, 0, 0, 0, 0},     //1  
@@ -38,7 +38,7 @@ unsigned char num[17][8] = {
     {0, 0, 0, 0, 0, 0, 0, 1},     //.  
 };  
   
-void Display(unsigned char com,unsigned char n){  
+void Display(unsigned char com,unsigned char n){        //每一位显示字符的轮子，之后number函数会调用该函数
     digitalWrite(d_a,LOW);  
     digitalWrite(d_b,LOW);  
     digitalWrite(d_c,LOW);  
@@ -85,13 +85,13 @@ void Display(unsigned char com,unsigned char n){
     digitalWrite(d_h,num[n][7]);  
 }  
 
-void count(){
+void count(){       //人次累加的函数
     if(digitalRead(sensor)==0){
         nop++;
     }
 }
 
-void number(){
+void number(){      //将人次累加的数据进行处理，之后交给显示函数处理
     int a=0,b=0,c=0,d=0;
 
     a=nop/1000;
@@ -129,7 +129,7 @@ void setup(){
 
 void loop(){
     int i;
-    for(i=0;i<175;i++){
+    for(i=0;i<175;i++){     //为什么用循环而不用延时函数？因为数码管延时时间过长会无法正常显示
         if(i==174){
             count();
             number();
