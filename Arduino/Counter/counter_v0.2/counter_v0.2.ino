@@ -91,7 +91,7 @@ void count(){       //人次累加的函数
     }
 }
 
-void number(){      //将人次累加的数据进行处理，之后交给显示函数处理
+void number(){      //将count函数累得到的数据进行处理，之后交给Display函数处理
     int a=0,b=0,c=0,d=0;
 
     a=nop/1000;
