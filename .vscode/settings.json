@@ -2,4 +2,7 @@
     "files.autoGuessEncoding": true,
     "arduino.path": "C:/Program Files (x86)/Arduino",
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.associations": {
+        "stdio.h": "c"
+    },
 }
