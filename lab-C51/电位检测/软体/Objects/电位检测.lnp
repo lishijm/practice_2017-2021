@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\wldd0.1.obj" 
+TO ".\Objects\电位检测" 
+PRINT(".\Listings\电位检测.m51") RAMSIZE(256) 
