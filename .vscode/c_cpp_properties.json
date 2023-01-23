@@ -30,7 +30,8 @@
             },
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "configurationProvider": "iarsystems.iar-build"
+            "configurationProvider": "iarsystems.iar-build",
+            "compilerPath": "C:\\mingw64\\bin\\gcc.exe"
         }
     ],
     "version": 4
