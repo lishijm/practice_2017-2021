@@ -1,1 +1,0 @@
-基于GEC6818平台的多媒体播放器，BMP图片播放，借助madplay播放mp3，借助mplayer播放avi。
