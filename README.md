@@ -1,4 +1,4 @@
-# Training
+# Practice
 
 * ./ACM-C/-->XUPT&HDU的校内online judge习题。
 * ./Lab-Arduino/-->207创客实验室的Arduino入门练习项目。
