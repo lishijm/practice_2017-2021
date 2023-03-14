@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.1
+vcount7
+Z0 !s110 1575374474
+!i10b 1
+!s100 4Kn]5L?l<6fhgMBP[^28c0
+Id[D[aCjR<NP9Leb;C[Uz63
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/training-HDL
+w1575374278
+8D:/training-HDL/count7.v
+FD:/training-HDL/count7.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1575374474.000000
+!s107 D:/training-HDL/count7.v|
+!s90 -reportprogress|300|-work|count7|-stats=none|D:/training-HDL/count7.v|
+!i113 1
+Z5 o-work count7
+Z6 tCvgOpt 0
+vcount7t
+R0
+!i10b 1
+!s100 c0YDICXH7TNe;BTLM[WiU1
+IZhaI:YJ@IlibX0EI7>JRB2
+R1
+R2
+w1575374468
+8D:/training-HDL/count7test.v
+FD:/training-HDL/count7test.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/training-HDL/count7test.v|
+!s90 -reportprogress|300|-work|count7|-stats=none|D:/training-HDL/count7test.v|
+!i113 1
+R5
+R6

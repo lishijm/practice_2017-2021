@@ -1,0 +1,15 @@
+D:/training-HDL/state1011_5.v {1 {vlog -work state1011_5 -stats=none D:/training-HDL/state1011_5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module s_51011
+
+Top level modules:
+	s_51011
+
+} {} {}} D:/training-HDL/state1011_5t.v {1 {vlog -work state1011_5 -stats=none D:/training-HDL/state1011_5t.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module s_51011t
+
+Top level modules:
+	s_51011t
+
+} {} {}}

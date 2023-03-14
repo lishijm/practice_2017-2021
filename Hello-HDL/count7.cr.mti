@@ -1,0 +1,15 @@
+D:/training-HDL/count7test.v {1 {vlog -work count7 -stats=none D:/training-HDL/count7test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module count7t
+
+Top level modules:
+	count7t
+
+} {} {}} D:/training-HDL/count7.v {1 {vlog -work count7 -stats=none D:/training-HDL/count7.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module count7
+
+Top level modules:
+	count7
+
+} {} {}}

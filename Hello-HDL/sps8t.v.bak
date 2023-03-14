@@ -1,0 +1,52 @@
+`timescale 1ns/1ns
+
+module spsp8t;
+reg clr,clk,start,datai;
+wire wr;
+wire [7:0]datao;
+sps8 u1(
+    .clk(clk),
+    .start(start),
+    .clr(clr),
+    .datai(datai),
+    .wr(wr),
+    .datao(datao)
+);
+always #5 clk=~clk;
+initial begin
+    clk=1'b0;
+    clr=1'b1;
+    start=1'b0;
+    #20 clr=1'b0;
+    start=1;
+    datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    start=0;
+    #5 start=1;
+    datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    start=0;
+    #5 start=1;
+    datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=0;
+    #5 datai=1;
+    #5 $stop;
+end
+endmodule

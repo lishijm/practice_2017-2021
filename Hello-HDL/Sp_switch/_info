@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/training-HDL
+vsps8
+Z1 !s110 1575525823
+!i10b 1
+!s100 c5AOKSJ2J1LOc_;>4HLHP2
+IAlXVmMZ6WG]:mkH@>4V@02
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1575525512
+8D:/training-HDL/sps8.v
+FD:/training-HDL/sps8.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1575525823.000000
+!s107 D:/training-HDL/sps8.v|
+!s90 -reportprogress|300|-work|Sp_switch|-stats=none|D:/training-HDL/sps8.v|
+!i113 1
+Z5 o-work Sp_switch
+Z6 tCvgOpt 0
+vspsp8t
+R1
+!i10b 1
+!s100 Id;e8AC[2O8P5?R8NS?3z1
+IY:c>iD8ilm6Wd:S]8CeoX2
+R2
+R0
+w1575525431
+8D:/training-HDL/sps8t.v
+FD:/training-HDL/sps8t.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/training-HDL/sps8t.v|
+!s90 -reportprogress|300|-work|Sp_switch|-stats=none|D:/training-HDL/sps8t.v|
+!i113 1
+R5
+R6

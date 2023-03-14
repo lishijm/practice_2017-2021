@@ -1,0 +1,37 @@
+`timescale 1ns/1ns
+
+module s_51011t;
+reg clk;
+reg clr;
+reg x;
+wire z;
+s_51011 u1(
+    .clk(clk),
+    .clr(clr),
+    .x(x),
+    .z(z));
+always #5 clk=~clk;
+initial
+    begin
+	clk=1'b0;
+        clr=1'b1;
+        #20 clr=1'b0;
+        x=1'b1;
+        #10 x=1'b0;
+        #10 x=1'b1;
+        #10 x=1'b1;
+        #10 x=1'b0;
+        #10 x=1'b1;
+        #10 x=1'b1;
+        #10 x=1'b1;
+        #10 x=1'b0;
+        #10 x=1'b1;
+        #10 x=1'b0;
+        #10 x=1'b0;
+        #10 x=1'b1;
+        #10 x=1'b0;
+        #10 x=1'b1;
+        #10 x=1'b1;
+        $stop;
+    end
+endmodule

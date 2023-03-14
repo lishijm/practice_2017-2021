@@ -1,0 +1,15 @@
+D:/training-HDL/sps8.v {1 {vlog -work Sp_switch -stats=none D:/training-HDL/sps8.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sps8
+
+Top level modules:
+	sps8
+
+} {} {}} D:/training-HDL/sps8t.v {1 {vlog -work Sp_switch -stats=none D:/training-HDL/sps8t.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module spsp8t
+
+Top level modules:
+	spsp8t
+
+} {} {}}
